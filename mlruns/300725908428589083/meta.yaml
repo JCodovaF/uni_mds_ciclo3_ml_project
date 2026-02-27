@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/usuario/Desktop/JORGE/Maestria/Tesis_Maestria/MLops/uni_mds_ciclo3_ml_project/mlruns/300725908428589083
+creation_time: 1772231916111
+experiment_id: '300725908428589083'
+last_update_time: 1772231916111
+lifecycle_stage: active
+name: diabetes_rf_experiment

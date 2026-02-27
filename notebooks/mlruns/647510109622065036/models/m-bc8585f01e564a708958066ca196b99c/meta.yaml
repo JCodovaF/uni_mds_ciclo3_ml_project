@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/usuario/Desktop/JORGE/Maestria/Tesis_Maestria/MLops/uni_mds_ciclo3_ml_project/notebooks/mlruns/647510109622065036/models/m-bc8585f01e564a708958066ca196b99c/artifacts
+creation_timestamp: 1772229879346
+experiment_id: '647510109622065036'
+last_updated_timestamp: 1772229887216
+model_id: m-bc8585f01e564a708958066ca196b99c
+model_type: null
+name: logistic_regression_model
+source_run_id: 16ebf7f0429e4c919d703a1b69fe8e4c
+status: 2
+status_message: null

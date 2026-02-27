@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/usuario/Desktop/JORGE/Maestria/Tesis_Maestria/MLops/uni_mds_ciclo3_ml_project/notebooks/mlruns/647510109622065036/models/m-d3684f14cb68456c822833ac24cac616/artifacts
+creation_timestamp: 1772229895832
+experiment_id: '647510109622065036'
+last_updated_timestamp: 1772229901021
+model_id: m-d3684f14cb68456c822833ac24cac616
+model_type: null
+name: random_forest_model
+source_run_id: 00ad7d67f7e5422a9132450d3362a478
+status: 2
+status_message: null

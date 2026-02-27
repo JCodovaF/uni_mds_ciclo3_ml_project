@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/usuario/Desktop/JORGE/Maestria/Tesis_Maestria/MLops/uni_mds_ciclo3_ml_project/notebooks/mlruns/647510109622065036/models/m-7a011a7d3ed04ae5840833c815637d88/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 3.1.4
+model_id: m-7a011a7d3ed04ae5840833c815637d88
+model_size_bytes: 778
+model_uuid: m-7a011a7d3ed04ae5840833c815637d88
+prompts: null
+run_id: 1d35be691eb046cfb8563ed8f4142d84
+utc_time_created: '2026-02-27 22:25:28.441875'

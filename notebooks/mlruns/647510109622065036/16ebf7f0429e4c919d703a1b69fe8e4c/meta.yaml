@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/usuario/Desktop/JORGE/Maestria/Tesis_Maestria/MLops/uni_mds_ciclo3_ml_project/notebooks/mlruns/647510109622065036/16ebf7f0429e4c919d703a1b69fe8e4c/artifacts
+end_time: 1772229887232
+entry_point_name: ''
+experiment_id: '647510109622065036'
+lifecycle_stage: active
+run_id: 16ebf7f0429e4c919d703a1b69fe8e4c
+run_name: logistic_regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772229879198
+status: 3
+tags: []
+user_id: usuario
