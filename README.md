@@ -20,7 +20,7 @@ Se realizaron experimentos con **Logistic Regression** y **Random Forest**, eval
 
 ## 🗂 Estructura del proyecto
 
-uni_mds_ciclo3_ml_project/
+uni_mds_ciclo3_ml_project/<br>
 │
 ├── data/
 │ ├── raw/ # Datos originales
