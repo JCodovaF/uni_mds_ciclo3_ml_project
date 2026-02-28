@@ -21,20 +21,20 @@ Se realizaron experimentos con **Logistic Regression** y **Random Forest**, eval
 ## 🗂 Estructura del proyecto
 
 uni_mds_ciclo3_ml_project/<br>
-│
-├── data/
-│ ├── raw/ # Datos originales
-│ └── processed/ # Datos transformados para entrenamiento
-│
-├── src/
-│ ├── data_preparation.py # Limpieza y transformación de datos
-│ ├── train.py # Entrenamiento y evaluación de modelos
-│ ├── serving.py # API para servir modelo con FastAPI
-│ └── run_api.py # Script para ejecutar la API
-│
-├── notebooks/ # Notebooks de experimentación
-├── reports/ # Gráficos, matrices de confusión y reportes
-├── test_inference.py # Prueba de la API para generar predicciones
+│/<br>
+├── data//<br>
+│ ├── raw/ # Datos originales/<br>
+│ └── processed/ # Datos transformados para entrenamiento/<br>
+│/<br>
+├── src//<br>
+│ ├── data_preparation.py # Limpieza y transformación de datos/<br>
+│ ├── train.py # Entrenamiento y evaluación de modelos/<br>
+│ ├── serving.py # API para servir modelo con FastAPI/<br>
+│ └── run_api.py # Script para ejecutar la API/<br>
+│/<br>
+├── notebooks/ # Notebooks de experimentación/<br>
+├── reports/ # Gráficos, matrices de confusión y reportes/<br>
+├── test_inference.py # Prueba de la API para generar predicciones/<br>
 └── README.md
 
 
