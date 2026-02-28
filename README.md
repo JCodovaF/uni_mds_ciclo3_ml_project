@@ -40,27 +40,27 @@ uni_mds_ciclo3_ml_project/<br>
 ## 📄 Flujo completo del proyecto MLops
 
 1️⃣ Data
-data/raw/diabetes.csv → Dataset original.
+data/raw/diabetes.csv → Dataset original.<br>
 src/data_preparation.py → Limpieza, manejo de valores nulos, transformación de columnas.
 
 2️⃣ Entrenamiento de modelos
-src/train.py → Entrena varios modelos (Logistic Regression, Random Forest, etc.).
-models/ → Carpeta donde se guardan los modelos entrenados (.pkl o .joblib).
-Evaluación de modelos → Determina el modelo “champion” según métricas (accuracy, f1-score, etc.).
+src/train.py → Entrena varios modelos (Logistic Regression, Random Forest, etc.).<br>
+models/ → Carpeta donde se guardan los modelos entrenados (.pkl o .joblib).<br>
+Evaluación de modelos → Determina el modelo “champion” según métricas (accuracy, f1-score, etc.).<br>
 Opcional: MLflow para tracking de experimentos (si estuviera instalado).
 
 3️⃣ API / Model Serving
-src/serving.py → API con FastAPI para servir el modelo campeón.
-Endpoints:
-/predict → Recibe un solo registro y devuelve predicción.
-/predict_batch → Recibe un batch y devuelve predicciones para todos.
+src/serving.py → API con FastAPI para servir el modelo campeón.<br>
+Endpoints:<br>
+/predict → Recibe un solo registro y devuelve predicción.<br>
+/predict_batch → Recibe un batch y devuelve predicciones para todos.<br>
 
 4️⃣ Inferencia
 test_inference.py → Prueba todo el CSV de entrada y guarda reports/predictions.csv.
 
 5️⃣ Reportes
-reports/ → Carpeta con:
-Resultados de predicciones (predictions.csv).
+reports/ → Carpeta con:<br>
+Resultados de predicciones (predictions.csv).<br>
 Gráficos, métricas, matrices de confusión.
 
 README.md con resumen de experimentos.
