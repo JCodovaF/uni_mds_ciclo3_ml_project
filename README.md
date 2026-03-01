@@ -56,8 +56,11 @@ Matriz de confusión<br>
 
 ## 📊 Resultados registrados:
 Logistic Regression: Accuracy ~0.78<br>
-Random Forest: Accuracy ~0.81 (Modelo campeón<br>
-Random Forest fue seleccionado como modelo final por tener mejores métricas generalizadas según validación.
+Random Forest: Accuracy ~0.81 Modelo campeón<br>
+Random Forest fue seleccionado como modelo final por tener mejores métricas generalizadas según validación.<br>
+Predicciones de ejemplo:<br>
+Guardadas en reports/predictions.csv.<br>
+
 
 ## 🗂 Estructura del proyecto
 
@@ -130,14 +133,7 @@ python test_inference.py
 Envía datos de prueba al endpoint /predict.
 Guarda predicciones en reports/predictions.csv.
 
-📊 Resultados
 
-Accuracy y F1-score:
-Logistic Regression: 0.78
-Random Forest: 0.81 ✅ Modelo campeón
-Matriz de confusión:
-Predicciones de ejemplo:
-Guardadas en reports/predictions.csv.
 
 📝 Notas adicionales
 Todos los scripts deben ejecutarse desde la raíz del proyecto.
