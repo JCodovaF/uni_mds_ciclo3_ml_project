@@ -17,11 +17,11 @@ Despliegue del modelo mediante API REST<br>
 Generación de inferencias y reportes<br>
 Este flujo, automatizado y reproducible, permite llevar un modelo desde la experimentación hasta un servicio de inferencia utilizable en producción.
 
-📊 2. Dataset
-📍 Origen
+## 📊 Dataset<br>
+📍 Origen<br>
 El dataset utilizado es el “Pima Indians Diabetes Dataset”, muy popular en la literatura de clasificación binaria para diagnóstico médico.
 
-🧾 Descripción de variables<br>
+## 🧾 Descripción de variables<br>
 El dataset contiene registros de pacientes con características médicas y una etiqueta binaria que indica si tienen diabetes (1) o no (0).<br>
 Ejemplos de features incluidos:<br>
 Variable	Tipo	Descripción<br>
@@ -35,7 +35,7 @@ DiabetesPedigreeFn	Numérica	Función de historial genético<br>
 Age	Numérica	Edad<br>
 Outcome	Binaria	1 = diabetes, 0 = no diabetes (label)<br>
 
-🧪 Exploración y preparación de datos
+## 🧪 Exploración y preparación de datos
 La preparación de datos es realizada en src/data_preparation.py.<br> 
 Incluye:<br>
 Lectura de data/raw/diabetes.csv<br>
@@ -44,7 +44,7 @@ Transformación/normalización de features<br>
 Guardado de datos procesados en data/processed/<br>
 Estas etapas aseguran que los modelos reciban datos consistentes y comparables para entrenar y evaluar.
 
-🤖 Modelos y Experimentación
+## 🤖 Modelos y Experimentación
 El script src/train.py entrena y evalúa varios modelos supervisados:<br>
 📌 Modelos evaluados<br>
 Logistic Regression<br>
@@ -54,7 +54,7 @@ Accuracy<br>
 F1-score<br>
 Matriz de confusión<br>
 
-📊 Resultados registrados:
+## 📊 Resultados registrados:
 Logistic Regression: Accuracy ~0.78<br>
 Random Forest: Accuracy ~0.81 (Modelo campeón<br>
 Random Forest fue seleccionado como modelo final por tener mejores métricas generalizadas según validación.
