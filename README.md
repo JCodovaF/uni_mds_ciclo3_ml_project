@@ -9,53 +9,54 @@ Student info:
 
 ## 📄 Descripción
 El objetivo de este proyecto es predecir si una persona padece diabetes o no usando el dataset clásico de Pima Indians Diabetes.
-Para ello se construye un pipeline completo de Machine Learning Operations (MLOps) que incluye:
-Preparación de datos
-Entrenamiento y evaluación de modelos
-Selección de modelo campeón
-Despliegue del modelo mediante API REST
-Generación de inferencias y reportes
+Para ello se construye un pipeline completo de Machine Learning Operations (MLOps) que incluye:<br>
+Preparación de datos<br>
+Entrenamiento y evaluación de modelos<br>
+Selección de modelo campeón<br>
+Despliegue del modelo mediante API REST<br>
+Generación de inferencias y reportes<br>
 Este flujo, automatizado y reproducible, permite llevar un modelo desde la experimentación hasta un servicio de inferencia utilizable en producción.
 
 📊 2. Dataset
 📍 Origen
 El dataset utilizado es el “Pima Indians Diabetes Dataset”, muy popular en la literatura de clasificación binaria para diagnóstico médico.
 
-🧾 Descripción de variables
-El dataset contiene registros de pacientes con características médicas y una etiqueta binaria que indica si tienen diabetes (1) o no (0).
-Ejemplos de features incluidos:
-Variable	Tipo	Descripción
-Pregnancies	Numérica	Número de embarazos
-Glucose	Numérica	Nivel de glucosa en sangre
-BloodPressure	Numérica	Presión arterial
-SkinThickness	Numérica	Grosor de piel
-Insulin	Numérica	Nivel de insulina
-BMI	Numérica	Índice de masa corporal
-DiabetesPedigreeFn	Numérica	Función de historial genético
-Age	Numérica	Edad
-Outcome	Binaria	1 = diabetes, 0 = no diabetes (label)
+🧾 Descripción de variables<br>
+El dataset contiene registros de pacientes con características médicas y una etiqueta binaria que indica si tienen diabetes (1) o no (0).<br>
+Ejemplos de features incluidos:<br>
+Variable	Tipo	Descripción<br>
+Pregnancies	Numérica	Número de embarazos<br>
+Glucose	Numérica	Nivel de glucosa en sangre<br>
+BloodPressure	Numérica	Presión arterial<br>
+SkinThickness	Numérica	Grosor de piel<br>
+Insulin	Numérica	Nivel de insulina<br>
+BMI	Numérica	Índice de masa corporal<br>
+DiabetesPedigreeFn	Numérica	Función de historial genético<br>
+Age	Numérica	Edad<br>
+Outcome	Binaria	1 = diabetes, 0 = no diabetes (label)<br>
 
 🧪 Exploración y preparación de datos
-La preparación de datos es realizada en src/data_preparation.py. Incluye:
-Lectura de data/raw/diabetes.csv
-Limpieza y revisión de valores faltantes
-Transformación/normalización de features
-Guardado de datos procesados en data/processed/
+La preparación de datos es realizada en src/data_preparation.py.<br> 
+Incluye:<br>
+Lectura de data/raw/diabetes.csv<br>
+Limpieza y revisión de valores faltantes<br>
+Transformación/normalización de features<br>
+Guardado de datos procesados en data/processed/<br>
 Estas etapas aseguran que los modelos reciban datos consistentes y comparables para entrenar y evaluar.
 
 🤖 Modelos y Experimentación
-El script src/train.py entrena y evalúa varios modelos supervisados:
-📌 Modelos evaluados
-Logistic Regression
-Random Forest Classifier
-Se usan las métricas clásicos de clasificación:
-Accuracy
-F1-score
-Matriz de confusión
+El script src/train.py entrena y evalúa varios modelos supervisados:<br>
+📌 Modelos evaluados<br>
+Logistic Regression<br>
+Random Forest Classifier<br>
+Se usan las métricas clásicos de clasificación:<br>
+Accuracy<br>
+F1-score<br>
+Matriz de confusión<br>
 
 📊 Resultados registrados:
-Logistic Regression: Accuracy ~0.78
-Random Forest: Accuracy ~0.81 (Modelo campeón)
+Logistic Regression: Accuracy ~0.78<br>
+Random Forest: Accuracy ~0.81 (Modelo campeón<br>
 Random Forest fue seleccionado como modelo final por tener mejores métricas generalizadas según validación.
 
 ## 🗂 Estructura del proyecto
