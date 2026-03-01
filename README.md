@@ -80,23 +80,23 @@ uni_mds_ciclo3_ml_project/<br>
 
 ## 📄 Flujo completo del proyecto MLops
 
-1️⃣ Data
+# 1️⃣ Data<br>
 data/raw/diabetes.csv → Dataset original.<br>
 src/data_preparation.py → Limpieza, manejo de valores nulos, transformación de columnas.
 
-2️⃣ Entrenamiento de modelos
+# 2️⃣ Entrenamiento de modelos<br>
 src/train.py → Entrena varios modelos (Logistic Regression, Random Forest, etc.).<br>
 models/ → Carpeta donde se guardan los modelos entrenados (.pkl o .joblib).<br>
 Evaluación de modelos → Determina el modelo “champion” según métricas (accuracy, f1-score, etc.).<br>
 Opcional: MLflow para tracking de experimentos (si estuviera instalado).
 
-3️⃣ API / Model Serving
+# 3️⃣ API / Model Serving<br>
 src/serving.py → API con FastAPI para servir el modelo campeón.<br>
 Endpoints:<br>
 /predict → Recibe un solo registro y devuelve una predicción.<br>
 /predict_batch → Recibe múltiples registros y devuelve predicciones.<br>
 
-4️⃣ Inferencia y Reportes
+# 4️⃣ Inferencia y Reportes<br>
 El script test_inference.py automatiza la generación de predicciones:
 Carga un dataset de prueba
 Llama al endpoint /predict
