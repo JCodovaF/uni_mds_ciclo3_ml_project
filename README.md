@@ -8,15 +8,55 @@ Student info:
 ## Project Name: Algoritmo para la predicción de la diabetes
 
 ## 📄 Descripción
-Este proyecto tiene como objetivo **predecir diabetes** utilizando un dataset clásico de Pima Indians Diabetes y aplicar técnicas de Machine Learning para:
-- Preparación de datos.
-- Entrenamiento y evaluación de modelos.
-- Selección del modelo campeón.
-- Despliegue y generación de predicciones vía API REST.
+El objetivo de este proyecto es predecir si una persona padece diabetes o no usando el dataset clásico de Pima Indians Diabetes.
+Para ello se construye un pipeline completo de Machine Learning Operations (MLOps) que incluye:
+Preparación de datos
+Entrenamiento y evaluación de modelos
+Selección de modelo campeón
+Despliegue del modelo mediante API REST
+Generación de inferencias y reportes
+Este flujo, automatizado y reproducible, permite llevar un modelo desde la experimentación hasta un servicio de inferencia utilizable en producción.
 
-Se realizaron experimentos con **Logistic Regression** y **Random Forest**, evaluando su desempeño con métricas como **accuracy**, **F1-score** y **matriz de confusión**.
+📊 2. Dataset
+📍 Origen
+El dataset utilizado es el “Pima Indians Diabetes Dataset”, muy popular en la literatura de clasificación binaria para diagnóstico médico.
 
----
+🧾 Descripción de variables
+El dataset contiene registros de pacientes con características médicas y una etiqueta binaria que indica si tienen diabetes (1) o no (0).
+Ejemplos de features incluidos:
+Variable	Tipo	Descripción
+Pregnancies	Numérica	Número de embarazos
+Glucose	Numérica	Nivel de glucosa en sangre
+BloodPressure	Numérica	Presión arterial
+SkinThickness	Numérica	Grosor de piel
+Insulin	Numérica	Nivel de insulina
+BMI	Numérica	Índice de masa corporal
+DiabetesPedigreeFn	Numérica	Función de historial genético
+Age	Numérica	Edad
+Outcome	Binaria	1 = diabetes, 0 = no diabetes (label)
+
+🧪 Exploración y preparación de datos
+La preparación de datos es realizada en src/data_preparation.py. Incluye:
+Lectura de data/raw/diabetes.csv
+Limpieza y revisión de valores faltantes
+Transformación/normalización de features
+Guardado de datos procesados en data/processed/
+Estas etapas aseguran que los modelos reciban datos consistentes y comparables para entrenar y evaluar.
+
+🤖 Modelos y Experimentación
+El script src/train.py entrena y evalúa varios modelos supervisados:
+📌 Modelos evaluados
+Logistic Regression
+Random Forest Classifier
+Se usan las métricas clásicos de clasificación:
+Accuracy
+F1-score
+Matriz de confusión
+
+📊 Resultados registrados:
+Logistic Regression: Accuracy ~0.78
+Random Forest: Accuracy ~0.81 (Modelo campeón)
+Random Forest fue seleccionado como modelo final por tener mejores métricas generalizadas según validación.
 
 ## 🗂 Estructura del proyecto
 
@@ -52,16 +92,16 @@ Opcional: MLflow para tracking de experimentos (si estuviera instalado).
 3️⃣ API / Model Serving
 src/serving.py → API con FastAPI para servir el modelo campeón.<br>
 Endpoints:<br>
-/predict → Recibe un solo registro y devuelve predicción.<br>
-/predict_batch → Recibe un batch y devuelve predicciones para todos.<br>
+/predict → Recibe un solo registro y devuelve una predicción.<br>
+/predict_batch → Recibe múltiples registros y devuelve predicciones.<br>
 
-4️⃣ Inferencia
-test_inference.py → Prueba todo el CSV de entrada y guarda reports/predictions.csv.
-
-5️⃣ Reportes
-reports/ → Carpeta con:<br>
-Resultados de predicciones (predictions.csv).<br>
-Gráficos, métricas, matrices de confusión.
+4️⃣ Inferencia y Reportes
+El script test_inference.py automatiza la generación de predicciones:
+Carga un dataset de prueba
+Llama al endpoint /predict
+Guarda las predicciones en reports/predictions.csv
+Genera reportes y matrices de confusión
+Esto facilita comparaciones y análisis cuantitativo de desempeño fuera del proceso de entrenamiento.
 
 README.md con resumen de experimentos.
 ---
