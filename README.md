@@ -135,7 +135,7 @@ Guarda predicciones en reports/predictions.csv.
 
 
 
-📝 Notas adicionales
+## 📝 Notas adicionales
 Todos los scripts deben ejecutarse desde la raíz del proyecto.
 Las dependencias principales están en requirements.txt:
 
@@ -149,7 +149,7 @@ requests
 Para instalar dependencias:
 pip install -r requirements.txt
 
-🔗 Enlaces útiles
+## 🔗 Enlaces útiles
 
 Notebooks: notebooks/
 Reportes: reports/
